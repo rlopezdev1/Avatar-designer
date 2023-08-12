@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main id="avatar-designer">
+
+        <h1>Avatar Designer</h1>
+        <p>Upload your image or try one of the provided options:</p>
+        <div>
+          <img src="./Example/cat1.png" alt="Avatar" id="avatar-img" width="250px" height="250px">
+        </div>
+        <div id="buttons-container">
+          <button class="image-buttons" data-image="./Example/cat1.png" data-enabled="true">Image 1</button>
+          <button class="image-buttons" data-image="./Example/cat2.jpg" data-enabled="true">Image 2</button>
+          <button class="image-buttons" data-image="./Example/cat3.png" data-enabled="true">Image 3</button>
+        </div>
+        <div id="file-container">
+          <label for="avatar"></label>
+          <input type="file" id="avatar" name="avatar" accept="image/png,image/jpeg"/>
+        </div>
+       <div id="border-radius-container">
+          <label for="border-radius">Border Radius</label>
+          <input type="range" id="border-radius" name="border-radius" min="0" max="50">
+
+          <label for="image-size">Image Size</label>
+          <input type="range" id="image-size" name="image-size" min="100" max="500">
+
+          <label for="border-color">Border Color</label>
+          <input type="color" id="border-color" name="border-color" value="#f6b73c">
+       </div>
+    </main>
+      <script type="module" src="/main.js"></script>
+  </body>
+</html>
